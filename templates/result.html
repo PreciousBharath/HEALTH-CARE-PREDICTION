@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            min-height: 100vh;
+            color: #fff;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+        .btn-primary {
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            border: none;
+            transition: 0.3s;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #2575fc, #6a11cb);
+        }
+        h2, h4 {
+            text-align: center;
+            font-weight: 700;
+        }
+        img {
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <h2>Predicted Insurance Charges</h2>
+        <div class="alert alert-success text-center" style="background: rgba(255,255,255,0.2); color:#fff; font-size:24px;">
+            ${{ predicted_charge }}
+        </div>
+    </div>
+
+    <div class="card">
+        <h4>Graphs</h4>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Average Charges by Age</h5>
+                <img src="{{ age_graph }}" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h5>Charges: Smoker vs Non-Smoker</h5>
+                <img src="{{ smoker_graph }}" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="/" class="btn btn-primary btn-lg">Predict Again</a>
+    </div>
+</div>
+</body>
+</html>
