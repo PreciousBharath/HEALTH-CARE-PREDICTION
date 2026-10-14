@@ -75,7 +75,7 @@ Contributions, issues and feature requests are welcome! Feel free to ⭐ star th
 <a href="https://github.com/PreciousBharath"><img src="https://img.shields.io/badge/GitHub-PreciousBharath-181717?style=for-the-badge&logo=github"/></a>
 <a href="https://linkedin.com/in/connectbharath"><img src="https://img.shields.io/badge/LinkedIn-connectbharath-0A66C2?style=for-the-badge&logo=linkedin"/></a>
 
-### 🍔 EAT · 😴 SLEEP · 💻 CODE · 🔁 REPEAT
+### 🍔 EAT · 💻 CODE · 😴 SLEEP · 🔁 REPEAT
 
 ⭐ **If you found this project useful, give it a star!** ⭐
 
